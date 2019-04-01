@@ -155,11 +155,6 @@ net-misc/chrome-remote-desktop ~amd64
 =dev-util/peg-0.1.18 ~amd64
 # required by sys-power/acpi_call (argument)
 =sys-power/acpi_call-3.17 ~amd64
-# required by app-laptop/tlp-1.1::tlp
-# required by app-laptop/tlp (argument)
-=sys-power/linux-x86-power-tools-3.17 ~amd64
-# required by app-laptop/tlp (argument)
-=app-laptop/tlp-1.1 ~amd64
 # required by games-util/joystick (argument)
 =games-util/joystick-1.6.0 ~amd64
 # required by libinput-gestures (argument)
@@ -421,3 +416,9 @@ net-misc/chrome-remote-desktop ~amd64
 =x11-misc/libinput-gestures-2.41 ~amd64
 # required by sys-apps/iio-sensor-proxy (argument)
 =sys-apps/iio-sensor-proxy-2.0 ~amd64
+# required by tlp (argument)
+app-laptop/tlp ~amd64
+# required by app-emulation/wine-staging-4.4-r1::gentoo[faudio]
+# required by @selected
+# required by @world (argument)
+=app-emulation/faudio-19.03 ~amd64
