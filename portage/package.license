@@ -1,16 +1,28 @@
 # required by sublime-text (argument)
 >=app-editors/sublime-text-3126 Sublime
-# required by dev-java/oracle-jdk-bin (argument)
->=dev-java/oracle-jdk-bin-1.8.0.112 Oracle-BCLA-JavaSE
-# required by skype (argument)
->=net-im/skype-4.3.0.37-r6 skype-4.0.0.7-copyright
-# required by google-chrome (argument)
->=www-client/google-chrome-54.0.2840.100 google-chrome
 
 >=www-plugins/adobe-flash-24.0.0.186 AdobeFlash-11.x
-# required by chrome-remote-desktop (argument)
-net-misc/chrome-remote-desktop google-chrome
-# required by net-misc/teamviewer (argument)
->=net-misc/teamviewer-13.1.3026 TeamViewer
-# required by =teamviewer-12.0.85001 (argument)
->=net-misc/teamviewer-12.0.85001:12 TeamViewer
+
+app-arch/unrar unRAR
+media-fonts/freefonts freedist free-noncomm all-rights-reserved
+media-fonts/font-bh-type1 bh-luxi
+media-fonts/font-bh-ttf bh-luxi
+media-fonts/corefonts MSttfEULA
+net-im/skypeforlinux Skype-TOS
+x11-drivers/nvidia-drivers NVIDIA-r2
+app-vim/vim-spell-ru myspell-ru_RU-AlexanderLebedev
+app-vim/colorschemes vim.org
+sys-firmware/intel-microcode intel-ucode
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
+# required by bluez-firmware (argument)
+>=sys-firmware/bluez-firmware-1.2 bluez-firmware
+# required by spotify (argument)
+>=media-sound/spotify-1.1.10 Spotify
+# required by media-sound/pulseaudio-modules-bt-9999::gentoo
+# required by pulseaudio-modules-bt (argument)
+>=media-libs/fdk-aac-2.0.0 FraunhoferFDK
+# required by google-chrome (argument)
+>=www-client/google-chrome-76.0.3809.132 google-chrome
+# required by slack-bin (argument)
+# move net-im/slack-bin net-im/slack
+>=net-im/slack-4.1.1 all-rights-reserved

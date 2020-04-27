@@ -1,0 +1,92 @@
+app-editors/sublime-text ~amd64
+
+# required by @preserved-rebuild (argument)
+www-client/google-chrome ~amd64
+
+# required by skypeforlinux (argument)
+net-im/skypeforlinux ~amd64
+x11-misc/primus ~amd64
+x11-misc/bumblebee ~amd64
+# required by optidesk (argument)
+=x11-misc/optidesk-9999 **
+# required by tlp (argument)
+app-laptop/tlp ~amd64
+
+gui-apps/waybar ~amd64
+gui-apps/grim ~amd64
+gui-apps/slurp ~amd64
+gui-wm/sway ~amd64
+gui-apps/swaybg ~amd64
+gui-apps/swayidle ~amd64
+gui-apps/swaylock ~amd64
+gui-libs/wlroots ~amd64
+app-text/scdoc ~amd64
+gui-apps/wl-clipboard ~amd64
+
+# wayland (sway) git version
+#=gui-wm/sway-9999 **
+#=gui-wm/swaybg-9999 **
+#=gui-wm/swayidle-9999 **
+#=gui-wm/swaylock-9999 **
+#=gui-libs/wlroots-9999 **
+#=app-text/scdoc-9999 **
+#=gui-apps/wl-clipboard-9999 **
+
+# required by light (argument)
+dev-libs/light ~amd64
+# required by kitty (argument)
+x11-terms/kitty ~amd64
+=x11-terms/kitty-terminfo-0.16.0 ~amd64
+
+# Firefox
+www-client/firefox ~amd64
+
+# required by fira-mono (argument)
+=media-fonts/fira-mono-3.205 ~amd64
+# required by redshift::gentooway (argument)
+=x11-misc/redshift-1.12-r3 ~amd64
+# required by x11-misc/safeeyes-2.0.9::gentoo
+# required by safeeyes (argument)
+=x11-misc/xprintidle-2.1 ~amd64
+# required by safeeyes (argument)
+=x11-misc/safeeyes-2.0.9 ~amd64
+# required by x11-misc/safeeyes-2.0.9::gentoo
+# required by safeeyes (argument)
+=dev-python/python-xlib-0.23-r1 ~amd64
+# required by pulseaudio-modules-bt (argument)
+=media-sound/pulseaudio-modules-bt-9999 **
+# required by imv (argument)
+media-gfx/imv ~amd64
+# required by iio-sensor-proxy (argument)
+=app-misc/iio-sensor-proxy-9999 **
+# required by spotify (argument)
+=media-sound/spotify-1.1.10-r1 ~amd64
+# required by linux-x86-power-tools (argument)
+=sys-power/linux-x86-power-tools-4.20 ~amd64
+net-im/telegram-desktop-bin ~amd64
+dev-java/openjdk ~amd64
+
+=dev-libs/nspr-4.25 ~amd64
+
+# move net-im/slack-bin net-im/slack
+net-im/slack ~amd64
+
+x11-misc/libinput-gestures ~amd64
+
+# Remove Python 2.7 support from the system
+=dev-java/javatoolkit-0.6.2-r1 ~amd64
+=media-libs/aubio-0.4.9 ~amd64
+=net-wireless/crda-4.14 ~amd64
+=media-libs/clutter-gst-3.0.27-r1 ~amd64
+=net-im/telepathy-mission-control-5.16.5 ~amd64
+=dev-lang/spidermonkey-60.5.2_p0-r3 ~amd64
+=dev-python/requests-2.23.0 ~amd64
+=media-libs/libmypaint-1.4.0-r1 ~amd64
+
+=media-libs/libvpx-1.8.2 ~amd64
+=media-libs/libwebp-1.1.0 ~amd64
+
+x11-wm/awesome ~amd64
+=x11-misc/autorandr-1.9 ~amd64
+
+app-emulation/wine-staging ~amd64

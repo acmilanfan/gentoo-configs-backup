@@ -1,32 +1,38 @@
 # Please consult /usr/share/portage/config/make.conf.example for a more
 # detailed example.
-CFLAGS="-march=haswell -O2 -pipe"
+CFLAGS="-march=native -O2 -pipe"
 CXXFLAGS="${CFLAGS}"
-MAKEOPTS ="-j4"
+MAKEOPTS ="-j8"
 # WARNING: Changing your CHOST is not something that should be done lightly.
 # Please consult http://www.gentoo.org/doc/en/change-chost.xml before changing.
 CHOST="x86_64-pc-linux-gnu"
 # These are the USE and USE_EXPAND flags that were used for
 # buidling in addition to what is provided by the profile.
-USE="bindist aes avx avx2 fma3 mmx mmxext popcnt sse sse2 
-     sse3 sse4_1 sse4_2 ssse3 
-     X qt5 alsa pulseaudio jpeg cdr dvd systemd
-     dri uxa xvmc sna xinerama xcomposite sslv3 v4l2
-     icu gstreamer djvu mobi ebook theora v4l lastfm
-     truetype type1 cleartype corefonts plasma
-     mtp touchpad imagemagick
-     -gnome -gtk"
-CPU_FLAGS_X86="aes avx avx2 fma3 mmx mmxext popcnt sse sse2
-               sse3 sse4_1 sse4_2 ssse3"
+USE="aes avx avx2 fma3 mmx mmxext popcnt sse sse2 
+     sse3 sse4_1 sse4_2 ssse3
+     lua berkdb rdp vnc alsa pulseaudio uxa xvmc sna xinerama sslv3 v4l2
+     icu gstreamer djvu mobi ebook theora v4l lastfm jumbo-build
+     lcdfilter infinality cleartype corefonts javafx
+     mtp imagemagick acl libinput input_devices_libinput
+     wayland xwayland egl gles abi_x86_32 tslib webp touchpad jack
+     chromium system-ffmpeg system-icu system-libvpx tcmalloc 
+     gtk3 -qt5 -qt device-mapper lvm initramfs
+     -kde -input_devices_evdev -input_devices_synaptics"
+CPU_FLAGS_X86="aes avx avx2 fma3 mmx mmxext pclmul popcnt sse sse2 
+	       sse3 sse4_1 sse4_2 ssse3"
+
 PORTDIR="/usr/portage"
 DISTDIR="${PORTDIR}/distfiles"
 PKGDIR="${PORTDIR}/packages"
 
-GENTOO_MIRRORS="ftp://ftp.lecl.net/pub/gentoo/"
+LINGUAS="en"
+
+RUBY_TARGETS="ruby24"
 
 GRUB_PLATFORMS="efi-64"
 
 VIDEO_CARDS="intel i965 nvidia"
-INPUT_DEVICES="evdev keyboard mouse synaptics touchpad"
+INPUT_DEVICES="libinput wacom mouse keyboard touchpad"
 
-source /var/lib/layman/make.conf
+GENTOO_MIRRORS="http://mirror.yandex.ru/gentoo-distfiles/"
+

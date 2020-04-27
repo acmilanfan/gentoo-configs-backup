@@ -1,6 +1,0 @@
-#=net-wireless/wpa_supplicant-2.6
-# interim meashure
-#>=app-crypt/gpgme-4.8.0
-#
-#x11-drivers/xf86-input-synaptics
-x11-drivers/xf86-input-evdev

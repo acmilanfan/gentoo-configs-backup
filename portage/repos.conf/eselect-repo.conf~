@@ -1,0 +1,30 @@
+# created by eselect-repo
+
+
+[sublime-text]
+location = /var/db/repos/sublime-text
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/sublime-text.git
+
+[bumblebee]
+location = /var/db/repos/bumblebee
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/bumblebee.git
+
+[tlp]
+location = /var/db/repos/tlp
+sync-type = git
+sync-uri = http://github.com/dywisor/tlp-portage.git
+
+[mva]
+location = /var/db/repos/mva
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/mva.git
+
+
+
+
+[x11]
+location = /var/db/repos/x11
+sync-type = git
+sync-uri = https://github.com/gentoo-mirror/x11.git
